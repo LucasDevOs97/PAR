@@ -94,3 +94,62 @@ Partes:
         ![Image text](Imagenes/coaxial1.png)
         ![Image text](Imagenes/coaxial2.png)
 
+- Tipos:
+
+    - Coaxial banda base:
+        - Se emplea en transimisión digital  
+        - Grueso: Se utilizaba en redes locales. RG100 (1 cm de diámetro); RG150 (1,5 cm de diámetro).
+        - Fino: Más empleado. Más flexibilidad, por lo que es más fácil de instalar.Menor protección contra el ruido = menor inmunidad al ruido.
+
+    - Coaxial banda ancha:
+        - Se emplea en transmisión analógica
+
+- **Fibra Óptica:**
+    - No es de cobre.
+    - No emplea impulsos eléctricos, emplea **impulsos de luz**, por ello no sufre interferencias por campos electromagnéticos
+    - Muy sensible.
+
+Todo sistema de fibra tiene 3 componentes:
+- Fuente de luz (en origen): Se encarga de generar un impulso de luz cuando queremos transmitir un 1 y de no generarlo si queremos mandar un 0.
+- Fibra óptica (cable físico).
+- Receptor (en destino): Transormará los impulsos de luz a 0's y 1's (lo opuesto a la fuente de luz). 
+
+Partes del cable de fibra óptica:
+- Cubierta: Parte externa de plástico.
+- Revestimiento
+- Hilo de fibra.
+
+![Image text](Imagenes/fibra.png)
+
+**Fibra monomodo:** El hilo de fibra es tan fino que prácticamente la luz va en línea recta, sin rebotar.
+
+![Image text](Imagenes/fibraMonomodo.png)
+
+
+**Fibra multimodo:** El núcleo es más ancho por lo que la luz podrá rebotar.  
+
+**Fibra multimodo con índice gradual:** La luz botará más suave, por lo que más que picos serán ondas. A medida que nos alejamos del centro hay más cambios (modificación gradual).
+
+![Image text](Imagenes/multimodo_gradual.png)  
+   
+
+### Cómo seguir utilizando la fibra si se rompe
+
+Hay tres formas de utilizarla:
+
+- Utilizar un conector: Pérdida de 10-20% de luz, por lo que la transimisión será bastante deficiente
+- Realizar una unión mécanica: Similar al conector, pero son uniones más perfectas. Hay que hacer un corte perfecto en un extremo del cable; hacemos lo mismo en el otro; después establecemos una unión mecánica (conectores especiales distintos de los conectores del punto anterior). Se pierde alrededor del 10%.
+- Fundir los extremos: Soldamos ambos extremos (se utiliza una maquinaria especíifica). Es el más perfecto con un 5% de pérdida.  
+
+## Medios Inalámbricos
+
+- Ondas de radio: Se recepcionan ondas. Características:
+    - Atraviesan objetos.
+
+- Microondas: Wi-Fi -> Wireless Fidelity. Estándar:
+    - IEEE 802.11: Estándar que nos especifica las distintas versiones de la Wi-Fi.
+        - R -> 5 GHz, 54 Mb/s
+        - b -> 2.4 GHz, 11 Mb/s
+        - g -> 2.4 GHz, 54 Mb/s
+        - n -> 2.4 GHz - 5 GHz, 300M b/s
+        - ac -> 2.4 GHz - 5 GHz, 1.3 Gb/s
