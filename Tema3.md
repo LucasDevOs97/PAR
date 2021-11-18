@@ -147,9 +147,91 @@ Hay tres formas de utilizarla:
     - Atraviesan objetos.
 
 - Microondas: Wi-Fi -> Wireless Fidelity. Estándar:
-    - IEEE 802.11: Estándar que nos especifica las distintas versiones de la Wi-Fi.
-        - R -> 5 GHz, 54 Mb/s
+    - IEEE 802.11 (protocolo)): Estándar que nos especifica las distintas versiones de la Wi-Fi.
+        - a -> 5 GHz, 54 Mb/s
         - b -> 2.4 GHz, 11 Mb/s
         - g -> 2.4 GHz, 54 Mb/s
         - n -> 2.4 GHz - 5 GHz, 300M b/s
         - ac -> 2.4 GHz - 5 GHz, 1.3 Gb/s
+    Teórico (en condiciones de kaboratorio), no se alcanza la velocidad máxima, hay pérdidas.
+
+    - **SSID:** Identificador de la red.
+    - **Canal:** Frecuencia en la que se emite la señal. La elección de la frecuencia es clave.
+        - Ejemplos:
+        En la banda de 2.4GHz, se suelen utilizar 13 o 14 canales:
+            - 1-> 2,412 GHz (se centra en 2.412 GHz, hay que dejar 11 para atrás y 11 para adelante, en este caso sería: 2.401 a 2.423)
+            - 2 -> 2.417 GHz (hay una diferencia de 0.005GHz = 5MHz)
+            - 3 -> 2.422
+            - 4 -> 2.4427
+            - 5 -> 2.432
+            - 6 -> 2.437
+            - 7 -> 2.442
+            - 8 -> 2.447
+            - 9 -> 2.452
+            - 10 -> 2.457
+            - 11 -> 2.462
+            - 12 -> 2.467
+            - 13 -> 2.472
+  
+            - Rango de frecuencia de un canañ: 22 MHz  (11 + 11).
+
+            - Los canales próximos entre si tendrán interferencias
+
+            > Wifi analizer (programa para ver el uso de los canales).
+
+            > Si hubiera 8 wifis en el canal 5, tampoco podríamos utilizar ni el 4 ni el 6, habría que ponerlo lo suficientemente alejado como para que no haya solapamiento
+
+    ## Ejercicio 1: Calcular la interferencia entre el canal 1 y el 3: (EXAMEN)
+
+    Recomendación: poner una línea y ponemos los canales 1 (2.412) y 3 (2.422)
+
+    Valor inicial del canal 1: 2.401
+    Valor final del canal 1: 2.423
+
+    Valor inicial del canal 3: 2.411
+    Valor final del canal 3: 2.433
+
+    2.423 - 2.411 = 12 MHz
+
+    ## Ejercicio 2: Calcular la interferencia entre el canal 1 y el 6
+
+    Canal 1: 2.412
+    Canal 6: 2.437
+
+    Valor inicial del canal 1: 2.401
+    Valor final del canal 1: 2.423
+
+    Valor inicial canal 6: 2.426
+    Valor final canal 6: 2.448
+
+    No hay interferencia (hacer ejercicios en papel y poner la foto)
+
+    ## Ejercicio 2: Calcular la interferencia entre el canal 6 y el 11
+
+    No hay interferencia (comprobar)
+
+
+
+    > La distancia mínima para que no haya solapamiento es 5.
+  
+    - **Cifrado:** WEP (no es seguro), WPA I-II (hoy en día se usa la WPA II, muy seguro).
+
+
+
+## Probleamas durante la transmisión.
+
+- Ruido Impulsivo: Interferencia muy fuerte y de muy corta duración (mucha amplitud, mucha frecuencia).
+
+- Diafonía: Cuando dos o más cables están juntos y se interfieren entre sí (Dos cables de cobre, por ejemplo).
+
+- Atenuación: Pérdida de intensidad de la señal a medida que recorre el espacio y el tiempo. Cable largo = mayor atenuación.
+
+### Dispositivos de  Comprobación
+
+- **Comprobador de continuidad:** Comprobará si hay continuidad en el cable, que no haya un corte, que esté bien crimpado el conector.
+
+- **Comprobadores de cableado:** Incluyen a los comprobadores de continuidad, lo primero que hace es medir la continuidad del cable. Además, detecta si hay diafonía, atenuación...
+ - **Reflectores del dominio del tiempo:** Incluye lo que hacen los dos anteriores. Reflectometría (medir reflejos). Capaz de especificar dónde están los problemas. Coloca el reflector al inicio del cable, emite una señal a lo largo de este, cuando llega a donde está roto rebota y regresa al aparato reflector. V = s / t. El reflector sabe la velocidad a la que emitimos la señal y sabe el tiempo que tarda en ir y en volver, por lo que podremos calcular el especio y saber el punto donde está el fallo. Es el más completo.
+
+
+ > Inflarrojos: No atraviesa objetos. Va en línea recta.
