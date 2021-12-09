@@ -77,8 +77,9 @@ Hay 4 pares, lo que son 8 cables con los siguiente colores: azul (masa), blanco 
 ![Image text](Imagenes/T568.png)
 
 La diferencia entre ambas es cambiar un cable de transmisión por uno de recepción. 
-    ## MONTAJE
-    endremos:
+      
+    ##MONTAJE
+    Tendremos:
     - **Cables Directos:** Cuando ambos extremos sean T568A ó T568B (más utilizado). Serán para conectar equipos de distinto tipo. Ej: switch y router.
     - **Cables Cruzados:** Cuando uno de los extremos sea T568A y el otro T568B. Cuando conectamos equipos del mismo tipo. Ej: 2 switches. Para que cuando uno emita vaya por la recepción del segundo y que cuando emita el segundo vaya por la recepción del primero. 
 
@@ -112,7 +113,7 @@ Partes:
 Todo sistema de fibra tiene 3 componentes:
 - Fuente de luz (en origen): Se encarga de generar un impulso de luz cuando queremos transmitir un 1 y de no generarlo si queremos mandar un 0.
 - Fibra óptica (cable físico).
-- Receptor (en destino): Transormará los impulsos de luz a 0's y 1's (lo opuesto a la fuente de luz). 
+- Receptor (en destino): Transformará los impulsos de luz a 0's y 1's (lo opuesto a la fuente de luz). 
 
 Partes del cable de fibra óptica:
 - Cubierta: Parte externa de plástico.
@@ -147,13 +148,13 @@ Hay tres formas de utilizarla:
     - Atraviesan objetos.
 
 - Microondas: Wi-Fi -> Wireless Fidelity. Estándar:
-    - IEEE 802.11 (protocolo)): Estándar que nos especifica las distintas versiones de la Wi-Fi.
+    - IEEE 802.11 (protocolo): Estándar que nos especifica las distintas versiones de la Wi-Fi.
         - a -> 5 GHz, 54 Mb/s
         - b -> 2.4 GHz, 11 Mb/s
         - g -> 2.4 GHz, 54 Mb/s
         - n -> 2.4 GHz - 5 GHz, 300M b/s
         - ac -> 2.4 GHz - 5 GHz, 1.3 Gb/s
-    Teórico (en condiciones de kaboratorio), no se alcanza la velocidad máxima, hay pérdidas.
+    Teórico (en condiciones de laboratorio), no se alcanza la velocidad máxima, hay pérdidas.
 
     - **SSID:** Identificador de la red.
     - **Canal:** Frecuencia en la que se emite la señal. La elección de la frecuencia es clave.
@@ -162,7 +163,7 @@ Hay tres formas de utilizarla:
             - 1-> 2,412 GHz (se centra en 2.412 GHz, hay que dejar 11 para atrás y 11 para adelante, en este caso sería: 2.401 a 2.423)
             - 2 -> 2.417 GHz (hay una diferencia de 0.005GHz = 5MHz)
             - 3 -> 2.422
-            - 4 -> 2.4427
+            - 4 -> 2.427
             - 5 -> 2.432
             - 6 -> 2.437
             - 7 -> 2.442
@@ -173,7 +174,7 @@ Hay tres formas de utilizarla:
             - 12 -> 2.467
             - 13 -> 2.472
   
-            - Rango de frecuencia de un canañ: 22 MHz  (11 + 11).
+            - Rango de frecuencia de un canal: 22 MHz  (11 + 11).
 
             - Los canales próximos entre si tendrán interferencias
 
